@@ -21,55 +21,55 @@ package object micrixalus {
 
 
   type Seq[+A] = scala.collection.immutable.Seq[A]
-  @inline def Seq = scala.collection.immutable.Seq
+  val Seq = scala.collection.immutable.Seq
 
   type IndexedSeq[+A] = scala.collection.immutable.IndexedSeq[A]
-  @inline def IndexedSeq = scala.collection.immutable.IndexedSeq
+  val IndexedSeq = scala.collection.immutable.IndexedSeq
 
   type List[+A] = scala.collection.immutable.List[A]
-  @inline def List = scala.collection.immutable.List
-  @inline def Nil = scala.collection.immutable.Nil
+  val List = scala.collection.immutable.List
+  val Nil = scala.collection.immutable.Nil
   type ::[A] = scala.collection.immutable.::[A]
-  @inline def :: = scala.collection.immutable.::
-  @inline def +: = scala.collection.+:
-  @inline def :+ = scala.collection.:+
+  val :: = scala.collection.immutable.::
+  val +: = scala.collection.+:
+  val :+ = scala.collection.:+
 
   type LazyList[+A] = scala.collection.immutable.LazyList[A]
-  @inline def LazyList = scala.collection.immutable.LazyList
-  @inline def #:: = scala.collection.immutable.LazyList.#::
+  val LazyList = scala.collection.immutable.LazyList
+  val #:: = scala.collection.immutable.LazyList.#::
 
   type Vector[+A] = scala.collection.immutable.Vector[A]
-  @inline def Vector = scala.collection.immutable.Vector
+  val Vector = scala.collection.immutable.Vector
 
   type Array[T] = scala.Array[T]
-  @inline def Array = scala.Array
+  val Array = scala.Array
 
 
   type StringBuilder = scala.collection.mutable.StringBuilder
-  @inline def StringBuilder = scala.collection.mutable.StringBuilder
+  val StringBuilder = scala.collection.mutable.StringBuilder
 
   type Range = scala.collection.immutable.Range
-  @inline def Range = scala.collection.immutable.Range
+  val Range = scala.collection.immutable.Range
 
   type Either[+A, +B] = scala.util.Either[A, B]
-  @inline def Either = scala.util.Either
+  val Either = scala.util.Either
   type Left[+A, +B] = scala.util.Left[A, B]
-  @inline def Left = scala.util.Left
+  val Left = scala.util.Left
   type Right[+A, +B] = scala.util.Right[A, B]
-  @inline def Right = scala.util.Right
+  val Right = scala.util.Right
 
   type Option[+A] = scala.Option[A]
-  @inline def Option = scala.Option
+  val Option = scala.Option
   type Some[+A] = scala.Some[A]
-  @inline def Some = scala.Some
+  val Some = scala.Some
   type None = scala.None.type
-  @inline def None = scala.None
+  val None = scala.None
 
 
   type <:<[-From, +To] = scala.<:<[From, To]
   type =:=[From, To] = scala.=:=[From, To]
   type DummyImplicit = scala.DummyImplicit
-  @inline def DummyImplicit = scala.DummyImplicit
+  val DummyImplicit = scala.DummyImplicit
   type ValueOf[T] = scala.ValueOf[T]
 
   type Any = scala.Any
@@ -81,35 +81,35 @@ package object micrixalus {
   type Unit = scala.Unit
 
   type Boolean = scala.Boolean
-  @inline def Boolean = scala.Boolean
+  val Boolean = scala.Boolean
   type Byte = scala.Byte
-  @inline def Byte = scala.Byte
+  val Byte = scala.Byte
   type Char = scala.Char
-  @inline def Char = scala.Char
+  val Char = scala.Char
   type Double = scala.Double
-  @inline def Double = scala.Double
+  val Double = scala.Double
   type Float = scala.Float
-  @inline def Float = scala.Float
+  val Float = scala.Float
   type Int = scala.Int
-  @inline def Int = scala.Int
+  val Int = scala.Int
   type Long = scala.Long
-  @inline def Long = scala.Long
+  val Long = scala.Long
   type Short = scala.Short
-  @inline def Short = scala.Short
+  val Short = scala.Short
 
-  @inline def Function = scala.Function
+  val Function = scala.Function
   type PartialFunction[-A, +B] = scala.PartialFunction[A, B]
 
   type Product = scala.Product
 
   type Specializable = scala.Specializable
-  @inline def Specializable = scala.Specializable
+  val Specializable = scala.Specializable
 
   type StringContext = scala.StringContext
-  @inline def StringContext = scala.StringContext
+  val StringContext = scala.StringContext
 
   type Symbol = scala.Symbol
-  @inline def Symbol = scala.Symbol
+  val Symbol = scala.Symbol
 
 
   type deprecated = scala.deprecated

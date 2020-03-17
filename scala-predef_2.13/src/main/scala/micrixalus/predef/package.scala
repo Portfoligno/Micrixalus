@@ -12,14 +12,14 @@ package object predef extends predef.LowPriorityImplicits {
   type Function[-A, +B] = A => B
   type Map[K, +V] = immutable.Map[K, V]
   type Set[A] = immutable.Set[A]
-  @inline def Map = immutable.Map
-  @inline def Set = immutable.Set
-  @inline def -> = Tuple2
+  val Map = immutable.Map
+  val Set = immutable.Set
+  val -> = Tuple2
 
   type OptManifest[T] = reflect.OptManifest[T]
   type Manifest[T] = reflect.Manifest[T]
-  @inline def Manifest = reflect.Manifest
-  @inline def NoManifest = reflect.NoManifest
+  val Manifest = reflect.Manifest
+  val NoManifest = reflect.NoManifest
   @inline def manifest[T](implicit m: Manifest[T]): Manifest[T] = m
   @inline def optManifest[T](implicit m: OptManifest[T]): OptManifest[T] = m
 
