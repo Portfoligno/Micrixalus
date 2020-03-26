@@ -76,6 +76,7 @@ package object micrixalus {
   type AnyRef = scala.AnyRef
   type AnyVal = scala.AnyVal
   type Nothing = scala.Nothing
+  type Null = scala.Null
 
   type Singleton = scala.Singleton
   type Unit = scala.Unit
