@@ -29,7 +29,7 @@ package object micrixalus {
   type List[+A] = scala.collection.immutable.List[A]
   val List = scala.collection.immutable.List
   val Nil = scala.collection.immutable.Nil
-  type ::[A] = scala.collection.immutable.::[A]
+  type ::[+A] = scala.collection.immutable.::[A]
   val :: = scala.collection.immutable.::
   val +: = scala.collection.+:
   val :+ = scala.collection.:+
