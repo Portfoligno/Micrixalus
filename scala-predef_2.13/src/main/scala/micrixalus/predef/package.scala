@@ -30,10 +30,6 @@ package object predef extends predef.LowPriorityImplicits {
 
   @inline implicit def micrixalusArrowAssoc[A](self: A): Predef.ArrowAssoc[A] =
     new Predef.ArrowAssoc(self)
-  @inline implicit def micrixalusSeqCharSequence(sequenceOfChars: IndexedSeq[Char]): Predef.SeqCharSequence =
-    new Predef.SeqCharSequence(sequenceOfChars)
-  @inline implicit def micrixalusArrayCharSequence(arrayOfChars: Array[Char]): Predef.ArrayCharSequence =
-    new Predef.ArrayCharSequence(arrayOfChars)
   @inline implicit def augmentString(x: String): StringOps =
     new StringOps(x)
 
